@@ -135,15 +135,11 @@ button.btn{font-family:inherit;line-height:inherit;cursor:pointer}
 <div class="lb" id="lb" hidden role="dialog" aria-modal="true"><div class="lbc"><div class="lbh"><b id="lbt"></b><button type="button" class="lbx" id="lbx">×</button></div><div class="lbb" id="lbb"></div><div class="lbf" id="lbf"></div></div></div>
 
 <script>
-/* =====================================================
-   كل المحتوى هنا — عدّلي النصوص فقط داخل هذا الكائن
-   All content lives here — edit text inside this object only.
-   مسارات الملفات: ضعي اسم الملف في url (مثل "files/jahez-report.pdf")
-   ===================================================== */
+
 const SITE = {
   email: "norahksh33@gmail.com",
   linkedin: "https://www.linkedin.com/in/norahkalshdoukhi/",
-  cv: "files/Norah_Alshdoukhi_CV.pdf"   // مسار ملف السيرة الذاتية — اتركيه "" لإخفاء الزر / CV file path — leave "" to hide the button
+  cv: "CV-Norah.Khaled QA.pdf"   // CV file path — leave "" to hide the button
 };
 
 const CONTENT = {
@@ -164,15 +160,15 @@ ar: {
     ["المنهجيات",["Agile/Scrum","SDLC","Page Object Model"]],
     ["أدوات التطوير",["IntelliJ IDEA","VS Code","Microsoft Office"]],
     ["المهارات الشخصية",["التفكير التحليلي وحل المشكلات","الدقة والاهتمام بالتفاصيل","التواصل الفعّال","العمل الجماعي","التعلم الذاتي وسرعة التكيف"]] ] },
-  projects:{ k:"المشاريع", h:"من حالة الاختبار الأولى إلى تقرير يمكن الوثوق به.", items:[
+  projects:{ k:"المشاريع", h:"من حالة الاختبار الأولى إلى تقرير يمكن الوثوق به", items:[
     { title:"Bazaar Stores — اختبار UI وAPI آلي", badge:"مشروع تخرج جماعي", meta:"بوتكامب SDA · فريق من 6 · 30 أكتوبر – 13 نوفمبر 2025", open:true,
       tools:["Java","Selenium","Cucumber BDD","REST Assured","Postman","TestNG","JUnit5","Maven","Jenkins","Jira-Xray","GitHub"],
       points:["الفريق غطّى 21 User Story للواجهة و26 للـ API، و141 حالة اختبار.","أنا غطيتُ: 4 قصص UI (تسجيل الدخول، عرض الكتالوج، حذف المستخدم، حذف المتجر) ووحدة Favorites في الـ API (3 قصص)، وكتبتُ 13 حالة UI و7 حالات API.","أعددتُ Jira-Xray، وهيأتُ Jenkins مع زميلة لتشغيل الاختبارات وإصدار التقارير، وتعاونا عبر GitHub."],
-      links:[["GitHub (UI)","https://github.com/ManarAlrashedi/BazaarStore_T5"],["GitHub (API)","https://github.com/HayaAlzuair/BazaarStoreT5_API"]], files:[["جدول حالات الاختبار","files/bazaar-test-cases.pdf"],["تقرير Jenkins","files/bazaar-jenkins-report.pdf"],["تقرير Cucumber","files/bazaar-cucumber-report.pdf"]], limits:[] },
+      links:[["GitHub (UI)","https://github.com/ManarAlrashedi/BazaarStore_T5"],["GitHub (API)","https://github.com/HayaAlzuair/BazaarStoreT5_API"]], files:[["جدول حالات الاختبار","files/Product Backlog Bazaar Store(UI-API)-T5 (1) "]],limits:[] },
     { title:"Jahez iOS — مشروع اختبار جوال", badge:"شخصي ومستقل", meta:"ليس عملًا رسميًا للشركة · 28–29 أكتوبر 2026 · iPhone 16 Pro Max · iOS 18.7.8 · البناءان 429 و429.1",
       tools:["اختبار يدوي","Jira","اختبار استكشافي","اختبار انحدار"],
       points:["40 حالة اختبار يدوية (30 أولوية 1 و10 أولوية 2): 37 ناجحة، 2 غير قابلة للتطبيق، 1 محجوبة.","المجالات: تسجيل الدخول/ضيف، البحث، القائمة، السلة، الكوبونات، العناوين، الإعدادات، تدوير الشاشة، بدون إنترنت، الأذونات، UX، RTL العربي.","جلسة استكشافية من 9 سيناريوهات.","اختبار انحدار لـ 10 حالات رئيسية على البناء 429.1، جميعها ناجحة.","سجّلتُ في Jira خطأ واحدًا (KAN-4، أولوية منخفضة، خطورة بسيطة، ما زال قابلًا للتكرار على 429.1) و4 ملاحظات، مع تسجيل شاشة وخطوات إعادة الإنتاج.","تقرير ملخص من صفحة واحدة."],
-      links:[], files:[["تقرير الملخص (PDF)","files/jahez-test-summary-report.pdf"],["ملف حالات الاختبار (PDF)","files/jahez-test-cases.pdf"],["صور الشاشة","files/jahez-screenshots.pdf"]],
+      links:[], files:[["تقرير الملخص (PDF)","files/Jahez_iOS_QA_Reports.pdf"],["ملف حالات الاختبار","files/Jahez_iOS_QA_Test_Cases.xlsx"],["ملف تقرير الأخطاء (Jira)","files/Jahez_iOS_QA_Bug_Report.pdf"]],
       stats:[["40","حالة اختبار"],["37","ناجحة"],["10","حالات انحدار ناجحة"],["9","سيناريوهات استكشافية"],["1","خطأ + 4 ملاحظات"]],
       limits:["اختبار الشبكة الضعيفة تعذّر.","لم أختبر Android بعد (مخطط لها).","لم أنفذ طلبًا أو دفعًا."] } ] },
   experience:{ k:"الخبرات العملية", h:"معرفة تتحول<br>إلى ممارسة.", items:[
@@ -182,7 +178,7 @@ ar: {
     { d:"أغسطس – نوفمبر 2025", t:"المعسكر المكثف في اختبار البرمجيات", s:"الأكاديمية السعودية الرقمية (SDA)", g:"تدريب تخصصي", cert:"files/certs/Norah.Botcomp.pdf", verify:"" },
     { d:"سبتمبر 2018 – أبريل 2023", t:"بكالوريوس هندسة البرمجيات", s:"جامعة حائل", g:"درجة البكالوريوس" } ],
     certs:[["ISTQB",[{n:"ISTQB Foundation Level (CTFL): الاختبار مخطط نوفمبر 2026",cert:"",verify:""}]],["IBM",[{n:"JavaScript Essentials",cert:"",verify:""},{n:"Git and GitHub",cert:"",verify:""},{n:"Intro to HTML/CSS/JavaScript",cert:"",verify:""},{n:"Intro to Software Engineering",cert:"",verify:""}]],["جامعة ميشيغان",[{n:"Web Design for Everybody Capstone",cert:"",verify:""},{n:"Advanced Styling with Responsive Design",cert:"",verify:""},{n:"Interactivity with JavaScript",cert:"",verify:""}]],["جامعة لندن",[{n:"Web Application Development with JavaScript and MongoDB",cert:"",verify:""}]]],
-    vol:{ h:"المشاركة المجتمعية", hh:"أثر يتجاوز العمل.", d:"يناير – يوليو 2026", t:"متطوعة في مبادرة SDA The Hub", p:"دعم الفعاليات التقنية للمبادرة.", cert:"شهادة شكر وتقدير من الرئيس التنفيذي للأكاديمية." },
+    vol:{ h:"المشاركة المجتمعية", hh:"أثر يتجاوز العمل.", d:"يناير – يوليو 2026", t:"متطوعة في مبادرة SDA The Hub", p:"دعم الفعاليات التقنية للمبادرة.", p:"شهادة شكر وتقدير من الرئيس التنفيذي للأكاديمية.", cert:"files/certs/volunteerCertificatte.pdf", verify:""},
     langs:["العربية · اللغة الأم","الإنجليزية · متوسط"] },
   contact:{ k:"التواصل", h:"لنصنع تجربة<br>أفضل معًا.", p:"فرصة جديدة، فريق طموح، أو حديث عن جودة البرمجيات. يسعدني تواصلك." },
   foot:"شغف بالجودة، في كل تفصيلة."
@@ -208,21 +204,21 @@ en: {
     { title:"Bazaar Stores — Automated UI & API Testing", badge:"Team capstone project", meta:"SDA bootcamp · team of 6 · Oct 30 – Nov 13, 2025", open:true,
       tools:["Java","Selenium","Cucumber BDD","REST Assured","Postman","TestNG","JUnit5","Maven","Jenkins","Jira-Xray","GitHub"],
       points:["The team covered 21 UI user stories and 26 API user stories, with 141 test cases.","I covered 4 UI stories (login, catalog view, delete user, delete store) and the API Favorites module (3 stories), writing 13 UI and 7 API test cases.","I set up Jira-Xray, and configured Jenkins with a teammate to run tests and produce reports; we collaborated through GitHub."],
-      links:[["GitHub (UI)","https://github.com/ManarAlrashedi/BazaarStore_T5"],["GitHub (API)","https://github.com/HayaAlzuair/BazaarStoreT5_API"]], files:[["Test cases sheet","files/bazaar-test-cases.pdf"],["Jenkins report","files/bazaar-jenkins-report.pdf"],["Cucumber report","files/bazaar-cucumber-report.pdf"]], limits:[] },
+      links:[["GitHub (UI)","https://github.com/ManarAlrashedi/BazaarStore_T5"],["GitHub (API)","https://github.com/HayaAlzuair/BazaarStoreT5_API"]], files:[["Test cases sheet","files/Product Backlog Bazaar Store(UI-API)-T5 (1) "]], limits:[] },
     { title:"Jahez iOS — Mobile Testing Project", badge:"Personal & independent", meta:"Not official company work · Oct 28–29, 2026 · iPhone 16 Pro Max · iOS 18.7.8 · builds 429 & 429.1",
       tools:["Manual testing","Jira","Exploratory testing","Regression testing"],
       points:["40 manual test cases (30 priority 1, 10 priority 2): 37 passed, 2 not applicable, 1 blocked.","Areas: login/guest, search, menu, cart, coupons, addresses, settings, screen rotation, offline, permissions, UX, Arabic RTL.","Exploratory session of 9 scenarios.","Regression of 10 key cases on build 429.1, all passed.","Logged one bug in Jira (KAN-4, low priority, minor severity, still reproducible on 429.1) and 4 observations, with screen recordings and reproduction steps.","One-page summary report."],
-      links:[], files:[["Summary report (PDF)","files/jahez-test-summary-report.pdf"],["Test cases file (PDF)","files/jahez-test-cases.pdf"],["Screenshots","files/jahez-screenshots.pdf"]],
+      links:[], files:[["Summary report (PDF)","files/Jahez_iOS_QA_Reports.pdf"],["Test cases file (PDF)","files/Jahez_iOS_QA_Test_Cases.xlsx"],["Bug Report (Jira)","files/Jahez_iOS_QA_Bug_Report.pdf"]],
       stats:[["40","test cases"],["37","passed"],["10","regression cases passed"],["9","exploratory scenarios"],["1","bug + 4 observations"]],
       limits:["Weak-network testing wasn’t possible.","Android not tested yet (planned).","No order or payment was placed."] } ] },
   experience:{ k:"Experience", h:"Knowledge,<br>put into practice.", items:[
     { d:"Nov 2023 – May 2024", t:"IT Engineer", s:"On-the-job training (Tamheer) · University of Hail, Deanship of Information Technology", p:"Supported systems and technical services and worked with the technical team to analyze issues and follow up on fixes.", cert:"files/certs/tamheer.jpg", verify:"" },
     { d:"Jun – Nov 2022", t:"Intern", s:"Co-op training · Hail Region Education Department, IT Division", p:"Supported daily technical tasks and gained experience in a government work environment." } ] },
   education:{ k:"Education & training", h:"A solid foundation.<br>Always learning.", ch:"Broader knowledge. Better perspective.", items:[
-    { d:"Aug – Nov 2025", t:"Intensive Software Testing Bootcamp", s:"Saudi Digital Academy (SDA)", g:"Specialized training", cert:"files/certs/sda-bootcamp.jpg", verify:"" },
+    { d:"Aug – Nov 2025", t:"Intensive Software Testing Bootcamp", s:"Saudi Digital Academy (SDA)", g:"Specialized training", cert:"files/certs/Norah.Botcomp.pdf", verify:"" },
     { d:"Sep 2018 – Apr 2023", t:"B.Sc. in Software Engineering", s:"University of Hail", g:"Bachelor’s degree" } ],
     certs:[["ISTQB",[{n:"ISTQB Foundation Level (CTFL): exam planned November 2026",cert:"",verify:""}]],["IBM",[{n:"JavaScript Essentials",cert:"",verify:""},{n:"Git and GitHub",cert:"",verify:""},{n:"Intro to HTML/CSS/JavaScript",cert:"",verify:""},{n:"Intro to Software Engineering",cert:"",verify:""}]],["University of Michigan",[{n:"Web Design for Everybody Capstone",cert:"",verify:""},{n:"Advanced Styling with Responsive Design",cert:"",verify:""},{n:"Interactivity with JavaScript",cert:"",verify:""}]],["University of London",[{n:"Web Application Development with JavaScript and MongoDB",cert:"",verify:""}]]],
-    vol:{ h:"Community contribution", hh:"Impact beyond work.", d:"Jan – Jul 2026", t:"Volunteer, SDA The Hub initiative", p:"Supported the initiative’s tech events.", cert:"Certificate of appreciation from the Academy’s CEO." },
+    vol:{ h:"Community contribution", hh:"Impact beyond work.", d:"Jan – Jul 2026", t:"Volunteer, SDA The Hub initiative", p:"Supported the initiative’s tech events.", p:"Certificate of appreciation from the Academy’s CEO.", cert:"files/certs/volunteerCertificatte.pdf", verify:""},
     langs:["Arabic · Native","English · Intermediate"] },
   contact:{ k:"Get in touch", h:"Let’s make<br>better experiences.", p:"A new opportunity, an ambitious team, or a chat about software quality. I’d love to hear from you." },
   foot:"Passion for quality, in every detail."
